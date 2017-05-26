@@ -8,7 +8,7 @@ body {
 .board {
   display: flex;
   border: solid 1px black;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: stretch;
   position: relative;
@@ -35,10 +35,14 @@ body {
   min-width: 25px;
 }
 
-div[data-pattern=blackFirst]:nth-child(even) {
+div[data-pattern=blackFirst]:nth-child(odd) {
   background-color: teal;
 }
 
-div[data-pattern=whiteFirst]:nth-child(odd) {
+div[data-pattern=whiteFirst]:nth-child(even) {
   background-color: teal;
+}
+
+.highlight {
+  background-color: yellow;
 }

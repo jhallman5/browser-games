@@ -232,7 +232,6 @@ function calculateDelta() {
   main();
 
   $('#newGame').on('click', function() {
-
     location.reload()
   })
 
